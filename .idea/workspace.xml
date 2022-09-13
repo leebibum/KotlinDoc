@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009953db-8458-48fa-a4a5-18d78c3f7340" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Classes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/DataClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/DelegatedProperties.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Delegation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/EnumClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/FuncIntf.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Generics.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Inheritance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/InlineClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Interfaces.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/NestedAndInnerClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Obj.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Properties.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/SealedClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/TypeAliases.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/VisibilityModifiers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Conditions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Exceptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Loops.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/ReturnsAndJumps.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/functions/Functions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/functions/HighOrderFunctionsAndLambdas.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/packagesandimports/PackagesAndImports.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/TypeChecksAndCasts.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Arrays.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Characters.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Numbers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Strings.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/UnSignedInteger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="009953db-8458-48fa-a4a5-18d78c3f7340" name="Changes" comment="추가 및 수정">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/concept/packagesandimports/PackagesAndImports.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/concept/packagesandimports/PackagesAndImports.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +109,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662214531955</updated>
     </task>
+    <task id="LOCAL-00001" summary="추가 및 수정">
+      <created>1663046121318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663046121318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="추가 및 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="추가 및 수정" />
   </component>
 </project>
