@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="009953db-8458-48fa-a4a5-18d78c3f7340" name="Changes" comment="" />
+    <list default="true" id="009953db-8458-48fa-a4a5-18d78c3f7340" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Classes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/DataClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/DelegatedProperties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Delegation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/EnumClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Extensions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/FuncIntf.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Generics.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Inheritance.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/InlineClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Interfaces.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/NestedAndInnerClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Obj.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/Properties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/SealedClasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/TypeAliases.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/classesandobjects/VisibilityModifiers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Conditions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Exceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/Loops.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/controlflows/ReturnsAndJumps.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/functions/Functions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/functions/HighOrderFunctionsAndLambdas.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/packagesandimports/PackagesAndImports.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/TypeChecksAndCasts.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Arrays.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Characters.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Numbers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/Strings.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/concept/types/basictypes/UnSignedInteger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,21 +50,89 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="KotlinDoc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EGGVL22IQFEFSThIuuz1F8YfN8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/beebeom/Desktop/Projects/KotlinDoc&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Kotlin.HighOrderFunctionsAndLambdasKt">
+    <configuration name="DelegatedPropertiesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concept.classesandobjects.DelegatedPropertiesKt" />
+      <module name="KotlinDoc.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concept.functions.FunctionsKt" />
+      <module name="KotlinDoc.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HighOrderFunctionsAndLambdasKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="concept.functions.HighOrderFunctionsAndLambdasKt" />
+      <module name="KotlinDoc.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.HighOrderFunctionsAndLambdasKt" />
+        <item itemvalue="Kotlin.FunctionsKt" />
+        <item itemvalue="Kotlin.DelegatedPropertiesKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,5 +143,16 @@
       <updated>1662214531955</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
