@@ -1,6 +1,6 @@
 package concept.classesandobjects
 
-// 익명 객체 생성은 객체식과 객체 선언 두 종류가 존재
+// 익명 객체 생성은 객체식과 객체 선언으로 나뉨
 
 // 객체식은 익명 클래스 객체를 생성
 // 정의, 상속, 인터페이스 구현을 처음부터 가능
@@ -10,9 +10,9 @@ val obj = object {
     fun func() {}
 }
 
-// 다른 객체를 상속받는 익명 객체 생성
+// 다른 클래스를 상속받는 익명 객체 생성
 // 다중 상속은 클래스와 동일
-// 다중 상속 시 변수 타입 명시 필수
+// 다중 상속 시 접근 제한자가 private가 아니라면 변수 타입 명시 필수
 abstract class BaseForObj {
     abstract fun absFunc()
 }
@@ -29,15 +29,15 @@ val objWithExtend: BaseForObj = object : BaseForObj(), IntfForObj {
 // 클래스 내부에서 익명 객체가 private 함수, 속성일때만 모든 멤버 접근 가능
 // 인라인 함수일 경우 불가
 class PrivateObjMember {
-    private fun getObj() = object {
+    private fun objFunc() = object {
         val prop = 0
     }
 
-    fun getObjPublic() = object {
+    fun objFuncPublic() = object {
         val prop = 0
     }
 
-    private inline fun getObjInline() = object {
+    private inline fun objFuncInline() = object {
         val prop = 0
     }
 
@@ -45,12 +45,12 @@ class PrivateObjMember {
         val prop = 0
     }
 
-    val objNotPublic = object {
+    val objPublic = object {
         val prop = 0
     }
 
-    fun privateTest() {
-        getObj().prop // 접근 가능
+    fun accessTest() {
+        objFunc().prop // 접근 가능
         // getObjPublic().prop 접근 불가 컴파일 에러
         // getObjInline().prop 접근 불가 컴파일 에러
         obj.prop // 접근 가능
@@ -59,24 +59,20 @@ class PrivateObjMember {
 }
 
 // 익명 객체 함수, 속성이 public일 경우 실제 타입은 아래와 동일
-// 슈퍼 타입이 없는 객체의 경우 Any
-// 슈퍼 타입이 있는 객체의 경우 해당 객체
-// 슈퍼 타입이 다수인 경우 명시적으로 선언된 반환 타입
+// 슈퍼 타입이 없는 경우 Any
+// 슈퍼 타입이 있는 경우 해당 객체
+// 슈퍼 타입이 다수인 경우 명시적으로 선언된 반환 타입(반환 타입 생략 불가)
 // ㄴ 속성의 경우 속성의 타입을 명시하지 않으면 private으로만 선언 가능
-
-
 class PublicObjMember {
-    val obj = object { // Any
-    }
+    val obj = object {} // Any
 
-    fun getObjFunc() = object { // Any
-    }
+    fun objFunc() = object {} // Any
 
     val objWithBase = object : BaseForObj() { // BaseForObj
         override fun absFunc() {}
     }
 
-    fun getObjWithBaseFunc() = object : BaseForObj() { // BaseForObj
+    fun objFuncWithBase() = object : BaseForObj() { // BaseForObj
         override fun absFunc() {}
     }
 
@@ -85,9 +81,20 @@ class PublicObjMember {
         override fun intfFunc() {}
     }
 
-    fun getObjWith2BaseFunc(): IntfForObj = object : BaseForObj(), IntfForObj { // IntfForObj
+    fun objFuncWith2Base(): IntfForObj = object : BaseForObj(), IntfForObj { // IntfForObj
         override fun absFunc() {}
         override fun intfFunc() {}
+    }
+
+    fun typeTest() {
+        val any: Any = obj
+        val any2: Any = objFunc()
+
+        val baseForObj: BaseForObj = objWithBase
+        val baseForObj2: BaseForObj = objFuncWithBase()
+
+        val intfForObj: IntfForObj = objWith2Base
+        val intfForObj2: IntfForObj = objFuncWith2Base()
     }
 }
 
@@ -127,25 +134,22 @@ class CompanionObj {
         private const val privateProp = 0
     }
 
-    val prop = privateProp // 클래스 멤버는 컴패니언 오브젝의 private 멤버도 참조 가능
+    val prop = privateProp // 클래스 멤버는 컴패니언 오브젝트의 모든 멤버 참조 가능
 }
 
 // 컴패니언 오브젝트 참조
 fun companionObjReference() {
-    CompanionObj.CompanionObjName.prop // 객체 생성 없이 참조, 이름 생략 가능
-
-    val companionObj = CompanionObj // 클래스 이름으로 컴패니언 오브젝트 참조 가능
+    CompanionObj.CompanionObjName.prop // 정적으로 참조, 이름 생략 가능
 }
+// static과 동일하게 보이지만 런타임 시 실제 인스턴스의 멤버로 취급
 
-// static과 동일하게 보이지만 런타임 시 실제 인스턴의 멤버로 취급
-
-// 컴패니언 오브젝트도 인터페이스 구현 가능
+// 인터페이스 구현 가능
 class CompanionObjWithIntf {
     companion object : IntfForObj {
         override fun intfFunc() {}
     }
 }
-// @JvmStatic 어노테이션으로 JVM에서 실제 static으로 사용 가능
+// @JvmStatic 어노테이션으로 JVM에서 static으로 사용 가능
 
 // 초기화 시점
 // 오브젝트 식은 사용될때 즉시 초기화 (익명 객체)

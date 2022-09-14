@@ -1,6 +1,5 @@
 package concept.classesandobjects
 
-// 속성의 getter는 항상 속성과 접근 제한자가 동일해야 함
 // 접근 제한자 생략 시 기본값은 public
 // private, protected, internal, public
 
@@ -31,14 +30,6 @@ open class Visibility {
     open protected val protectedProp = 10 // 서브 클래스에서만 접근 가능
     private val privateProp = 10 // 이 클래스에서만 접근 가능
 
-    fun innerVisibilityTest() {
-        val visibilityInner = VisibilityInner()
-        visibilityInner.innerPublicProp // 접근 가능
-        visibilityInner.innerInternalProp // 접근 가능
-        // visibilityInner.innerProtectedProp 접근 불가
-        // visibilityInner.innerPrivateProp 접근 불가
-    }
-
     class VisibilityInner {
         val innerPublicProp = 10
         internal val innerInternalProp = 10
@@ -52,9 +43,17 @@ open class Visibility {
             privateProp // 접근 가능
         }
     }
+
+    fun innerVisibilityTest() {
+        val visibilityInner = VisibilityInner()
+        visibilityInner.innerPublicProp // 접근 가능
+        visibilityInner.innerInternalProp // 접근 가능
+        // visibilityInner.innerProtectedProp 접근 불가
+        // visibilityInner.innerPrivateProp 접근 불가
+    }
 }
 
 class VisibilityDerived() : Visibility() {
-    override val internalProp: Int = 20 // internal
-    public override val protectedProp: Int = 20 // public
+    override val internalProp = 20 // internal
+    public override val protectedProp = 20 // public
 }

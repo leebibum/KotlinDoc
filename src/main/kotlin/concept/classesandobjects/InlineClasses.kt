@@ -8,9 +8,17 @@ package concept.classesandobjects
 // 인라인 클래스는 값을 담기 위해서만 존재
 // value class와 @Jvminline으로 정의
 // 주 생성자에서 초기화되는 속성 하나만 소유 가능
+// 런타임 시 인라인 클래스는 단일 속성으로 변환
+// 함수, init 가능
 @JvmInline
 value class Inline(val prop: String) {
+    init {
+        println("초기화 블록 실행")
+    }
+
     val length get() = this.prop.length // getter를 가진 속성은 소유 가능, lateinit, 위임 속성 불가
+
+    fun func() {}
 }
 
 // 인터페이스 구현 가능
@@ -49,7 +57,7 @@ fun func(arg: String) {} // public final void func(String arg)
 // public final void func-<hashcode>(String arg)
 
 // 자바에서도 인라인 클래스를 수용하는 함수 호출 가능
-// @JvmName으로 직접 자바코드에서 사용될 함수명 지정 가능
+// @JvmName으로 직접 자바에서 사용될 함수명 지정 가능
 @JvmName("funcInlineForIntf")
 fun func(arg: InlineForIntf) {
 }

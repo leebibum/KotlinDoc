@@ -1,12 +1,12 @@
 package concept.classesandobjects
 
 // 클래스 내부에 중첩 클래스 정의 가능
-// 중첩 클래스는 아우터 클래스에서 정적으로 접근 인스턴스로는 접근 불가
+// 중첩 클래스는 아우터 클래스에서 정적으로 접근, 인스턴스로 접근 불가
 // 사실상 서로 다른 클래스
 // 인터페이스도 중첩 가능
-// 클래스에 인터페이스, 인터페이스 안에 클래도 중첩 가능
+// 클래스 안에 인터페이스, 인터페이스 안에 클래스 중첩 가능
 // 중첩 클래스는 아우터 클래스의 멤버 참조 불가능
-// 아우터 클래스 인스턴스 생성하면 가능
+// 아우터 클래스의 인스턴스를 생성하면 가능
 class OuterClassWithNested {
     val outerProp = 0
 
@@ -20,7 +20,7 @@ class OuterClassWithNested {
 
     }
 
-    interface NestedIntf { //
+    interface NestedIntf {
         val prop get() = 1
 
         fun outerAccessTest() {

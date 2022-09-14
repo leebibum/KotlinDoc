@@ -67,7 +67,7 @@ fun implicitLabel() {
 
 // 익명 함수를 생성하여 비지역 반환 해결 가능
 // 익명 함수의 return은 익명 함수만을 종료
-fun localReturnByAnonymousFunc() {
+fun localReturnByAnonFunc() {
     listOf(1, 2, 3, 4, 5).forEach(fun(value: Int) { // 익명 함수
         if (value == 3) return
         println(value)
